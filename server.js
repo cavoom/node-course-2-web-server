@@ -1,6 +1,7 @@
 const express = require('express'); // require the Express Server module
 const hbs = require('hbs'); // This is the view engine that we loaded from npm
 const fs = require('fs');
+const port = process.env.PORT || 3000; // Use Heroku port or local port 3000
 
 var app = express(); // Make a new app
 
@@ -75,8 +76,8 @@ app.get('/bad', (req, res) => { // so when we get
 });
 
 
-app.listen(3000,()=>{
-    console.log('The server is now up and running');
+app.listen(port,()=>{
+    console.log('The server is now up and running on port: ',port);
 }); // Port 3000 is a good port for local development - starts the listeer on port 3000
 
 
