@@ -57,6 +57,17 @@ app.get('/', (req, res) => {
     
 });
 
+// New Projects Page
+app.get('/projects', (req, res) => {
+    res.render('home.hbs', {
+        pageTitle: 'Projects Page',
+        welcomeMessage: 'This is your Projects Page',
+
+
+    });
+    
+});
+
 app.get('/about', (req, res) => {
     //res.send('<h2>The About Page</h2>');
     res.render('about.hbs', {
