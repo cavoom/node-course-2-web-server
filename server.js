@@ -1,6 +1,6 @@
 const express = require('express'); // require the Express Server module
 const hbs = require('hbs'); // This is the view engine that we loaded from npm
-const fs = require('fs');
+const fs = require('fs'); // file system capabilities
 const port = process.env.PORT || 3000; // Use Heroku port or local port 3000
 
 var app = express(); // Make a new app
